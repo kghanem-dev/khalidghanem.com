@@ -77,3 +77,6 @@ main{min-width:0}.section{padding:91px 0;border-bottom:1px solid var(--line);scr
 
 /* Space the compact overview above the delivery details. */
 .hero-content{padding-bottom:28px}
+
+/* Deployment summaries stay brief; supporting evidence is available on demand. */
+.compact-project .deployment-summary{margin:8px 0 0}.compact-project .deployment-notes{margin-top:4px}.deployment-note-content{padding:8px 0 6px}.compact-project .deployment-note-content p{max-width:none;margin:10px 0}.deployment-note-content .status{margin-bottom:2px}.deployment-note-content .project-bottom{margin-top:12px}
