@@ -80,3 +80,6 @@ main{min-width:0}.section{padding:91px 0;border-bottom:1px solid var(--line);scr
 
 /* Deployment summaries stay brief; supporting evidence is available on demand. */
 .compact-project .deployment-summary{margin:8px 0 0}.compact-project .deployment-notes{margin-top:4px}.deployment-note-content{padding:8px 0 6px}.compact-project .deployment-note-content p{max-width:none;margin:10px 0}.deployment-note-content .status{margin-bottom:2px}.deployment-note-content .project-bottom{margin-top:12px}
+
+/* A single, responsive product demo with native playback controls. */
+.grappletrak-demo{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#111;border:1px solid #303030;border-radius:10px;margin:22px 0 18px}.grappletrak-demo:focus-visible{outline:2px solid #f4bd3f;outline-offset:4px}
