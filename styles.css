@@ -74,3 +74,6 @@ main{min-width:0}.section{padding:91px 0;border-bottom:1px solid var(--line);scr
 @media(max-width:660px){.activity-controls{margin:18px 0 17px}.activity-controls select,.activity-controls button{min-height:44px}.activity-day-detail{font-size:11px;min-height:40px}.activity-source{font-size:10px}.activity-original summary{min-height:44px}.contribution-scroll{padding-bottom:14px}.contribution-grid{grid-template-columns:26px repeat(53,12px);grid-template-rows:17px repeat(7,12px)}.contribution-day{width:12px;height:12px}}
 .contribution-year-detail{font-size:11px;line-height:1.7;color:#b8b8b8;margin:2px 0 0}.contribution-year-detail:empty{display:none}
 .interactive-activity .activity-calendars{margin-top:22px}.activity-refresh-row{display:flex;align-items:center;gap:20px;justify-content:space-between}.activity-refresh-row button{background:none;border:0;font-size:10px;min-height:36px;color:#aaa;padding:6px 0;text-decoration:underline;text-underline-offset:3px;flex-shrink:0}.activity-refresh-row button:disabled{opacity:.5;cursor:wait}@media(max-width:660px){.activity-refresh-row{gap:15px}.activity-refresh-row button{min-height:44px}}
+
+/* Space the compact overview above the delivery details. */
+.hero-content{padding-bottom:28px}
