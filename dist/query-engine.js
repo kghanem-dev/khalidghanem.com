@@ -30,7 +30,7 @@
       { id:'delivery', title:'Delivery & consulting', category:'Delivery', description:'Technical discovery, solution architecture, end-to-end ownership, technical leadership, client and team leadership, client interaction, stakeholder management, SOWs, ADRs, deliverables, QA/QC, milestones, ticketing and tagging, project management, documentation, release management, migration and handover, cost modeling and optimization, HIPAA and SOC 2 planning', section:'toolbox', tags:'program management architecture delivery' }
     ],
     education: [
-      { id:'athabasca', title:'BSc, Computing & Information Systems Management', school:'Athabasca University', dates:'Expected Dec 2026', description:'In progress; GPA 3.9.', section:'credentials', tags:'computing university GPA' },
+      { id:'athabasca', title:'BSc, Computing & Information Systems Management', school:'Athabasca University', dates:'Expected Dec 2026', description:'In progress.', section:'credentials', tags:'computing university' },
       { id:'calgary', title:'BA, Sociology', school:'University of Calgary', dates:'2022', description:'Completed in 2022.', section:'credentials', tags:'degree university' }
     ],
     certifications: [
