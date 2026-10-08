@@ -51,6 +51,9 @@
     grid.setAttribute('aria-labelledby', heading.id);
     const yearStart = new Date(year + '-01-01T12:00:00Z');
     const weekdayOffset = yearStart.getUTCDay();
+    const lastDayOffset = Math.round((new Date(days[days.length - 1].date + 'T12:00:00Z') - yearStart) / 86400000);
+    const weekCount = Math.floor((lastDayOffset + weekdayOffset) / 7) + 1;
+    grid.style.setProperty('--contribution-weeks', weekCount);
     const buttons = [];
     let previousMonth = -1;
     [['Mon', 3], ['Wed', 5], ['Fri', 7]].forEach(([label, row]) => {
@@ -116,7 +119,7 @@
       load(await response.json(), new Date().toISOString(), true);
     } catch {
       if (history) source.textContent = `Saved public GitHub data from ${dateText(lastLoadedAt.slice(0, 10))}. Live refresh unavailable; the calendar remains interactive.`;
-      else { source.textContent = 'Contribution history is unavailable. View GitHub or the original snapshot below.'; document.getElementById('activityOriginal').open = true; }
+      else { source.textContent = 'Contribution history is unavailable. Use the View GitHub link above.'; }
     } finally { clearTimeout(timeout); refresh.disabled = false; refresh.textContent = 'Refresh'; }
   }
   refresh.addEventListener('click', refreshHistory);

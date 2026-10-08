@@ -83,3 +83,6 @@ main{min-width:0}.section{padding:91px 0;border-bottom:1px solid var(--line);scr
 
 /* A single, responsive product demo with native playback controls. */
 .grappletrak-demo{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#111;border:1px solid #303030;border-radius:10px;margin:22px 0 18px}.grappletrak-demo:focus-visible{outline:2px solid #f4bd3f;outline-offset:4px}
+
+/* Fill the activity card with the weeks shown, keeping square, readable days. */
+.contribution-grid{grid-template-columns:30px repeat(var(--contribution-weeks,53),minmax(12px,1fr));grid-template-rows:20px repeat(7,auto);gap:4px;width:100%;min-width:calc(30px + var(--contribution-weeks,53)*16px)}.contribution-day{width:100%;height:auto;aspect-ratio:1;max-width:28px}.contribution-month{font-size:10px}.contribution-weekday{font-size:9px;align-self:center}
