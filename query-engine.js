@@ -31,7 +31,7 @@
       { id:'delivery', title:'Delivery & consulting', category:'Delivery', description:'Technical discovery, solution architecture, end-to-end ownership, technical leadership, client and team leadership, client interaction, stakeholder management, SOWs, ADRs, deliverables, QA/QC, milestones, ticketing and tagging, project management, documentation, release management, migration and handover, cost modeling and optimization, HIPAA and SOC 2 planning', section:'toolbox', tags:'program management architecture delivery' }
     ],
     education: [
-      { id:'athabasca', title:'BSc, Computing & Information Systems Management', school:'Athabasca University', dates:'Expected Dec 2026', description:'In progress.', section:'credentials', tags:'computing university' },
+      { id:'athabasca', title:'BSc, Computing & Information Systems Management', school:'Athabasca University', dates:'Expected 2027', description:'In progress.', section:'credentials', tags:'computing university' },
       { id:'calgary', title:'BA, Sociology', school:'University of Calgary', dates:'2022', description:'Completed in 2022.', section:'credentials', tags:'degree university' }
     ],
     certifications: [
@@ -108,7 +108,7 @@
     if (/\b(experience|career|jobs|employment|timeline)\b/.test(q)) return formatResult(data.experience,'Experience spans AI architecture and delivery, independent consulting, product engineering, clinical informatics, data migration, and operations.','English');
     if (/\b(profile|about khalid|about you)\b/.test(q)||q==='about') return formatResult(data.profile,data.profile[0].description,'English');
     if (/\b(certif|credential)\w*/.test(q)) return formatResult(data.certifications,'Three featured earned credentials; AWS Solutions Architect — Associate and Claude Certified Architect — Professional are in progress.','English');
-    if (/\b(education|degree|university|study|school)\b/.test(q)) return formatResult(data.education,'BSc in progress at Athabasca University (expected Dec 2026); BA Sociology from the University of Calgary (2022).','English');
+    if (/\b(education|degree|university|study|school)\b/.test(q)) return formatResult(data.education,'BSc in progress at Athabasca University (expected 2027); BA Sociology from the University of Calgary (2022).','English');
     if (/\b(ibm|oracle|records|analyst)\b/.test(q)) return formatResult([data.experience[3]],data.experience[3].description,'English');
     if (/\b(cost|financial|money|dollar|annual)\b/.test(q) && /\b(saving|savings|save|saved|reduce|reduced)\b/.test(q) && !/\b(email|travel|planner|grappletrak|healthcare|shopify|dermatology)\b/.test(q)) return formatResult([data.projects[4],data.projects[0],data.projects[1]],'Healthcare SaaS: retired a ~CAD $38k/year Shopify Plus line. GCP agent: ~57 hours/week of saved time valued at ~$88k/year, conservatively estimated. GrappleTrak: model routing reduced token cost by ~70%. Operating-cost estimates are separate from savings.','English');
     if (/\b(time|hours|save|savings)\b/.test(q)&&/\b(email|agent|travel|planner)\b/.test(q)) return formatResult([data.projects[0]],'The email agent is estimated to save ~57 hours/week, valued at ~$88k/year, for 20 planners at ~850 emails/week. These are conservative estimates of saved time.','English');
