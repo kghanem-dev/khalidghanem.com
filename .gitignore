@@ -1,0 +1,26 @@
+# Secrets and local config: never commit
+.env
+.env.*
+.dev.vars
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Agent and editor state
+.claude/
+.openai/
+.vscode/
+.idea/
+
+# Personal source documents
+*.pdf
+*.docx
+resume*/
+
+# Build and OS noise
+dist/
+node_modules/
+.DS_Store
+Thumbs.db
+desktop.ini
